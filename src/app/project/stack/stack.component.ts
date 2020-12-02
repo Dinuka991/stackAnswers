@@ -1,3 +1,4 @@
+import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import { StackService } from '../stack.service';
 
@@ -14,8 +15,14 @@ export class StackComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.stackService.test().subscribe(res => this.test = res);
-   
+   console.log(Colors[0])
+
+
   }
 
+}
+export enum Colors {
+  RED,
+  BLUE,
+  springfy
 }
